@@ -1,0 +1,197 @@
+/* sub-content style */
+input, textarea, .submit-button {
+  font-family: 'Merriweather', Georgia, Times;
+  color: #0A014F; /* OXFORD BLUE */
+}
+
+label, textarea, input, textarea, .submit-button {
+  font-size: 15px;
+}
+
+/* body and container */
+.sub-body-wrapper {
+  margin: 5% 220px 71px 5%;
+  display: inline-block;
+  min-width: 45%;
+}
+
+/* sub cover style */
+.sub-cover-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.sub-cover-title {
+  background-image: url('../assets/cover.jpg');
+  min-height: 150px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.sub-cover-title h1 {
+  font-size: 40px;
+  text-align: center;
+  padding: 35px 35px 0 35px;
+  margin: 0 auto;
+}
+
+/* side nav style */
+.sub-side-nav-wrapper {
+  position: fixed;
+  right: 5%;
+  max-width: 130px;
+  display: block;
+  padding-top: 5%;
+}
+
+@media (max-width: 465px) {
+  .sub-cover-title h1 {
+    padding: 35px 0 0 0;
+  }
+}
+
+/* about section style */
+.about-section-wrapper {
+  width: 70%;
+  min-width: 70%;
+  float: left;
+  padding: 0;
+  position: relative;
+}
+
+/* media query for about page */
+@media (max-width: 1055px) {
+  .about-section-wrapper {
+    width: 90%;
+  }
+}
+
+.img-wrapper {
+  margin-right: 30px;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  float: left;
+}
+
+.img-cropper {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  margin: 20px 0 0 0;
+}
+
+.img-cropper img {
+  height: 100%;
+  position: relative;
+  display: block;
+}
+
+/* form style */
+.input-wrapper {
+  display: block;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+label {
+  margin-right:3px;
+}
+
+.field-label {
+  float: left;
+  width: 200px;
+}
+
+input {
+  margin: 0 3px 0 0;
+}
+
+.text-box {
+  height: 20px;
+  width: 250px;
+  padding-left: 3px;
+}
+
+textarea {
+  height: 150px;
+  width: 250px;
+  padding-left: 3px;
+}
+
+@media (max-width: 725px) {
+  .text-box {
+    width: 175px;
+  }
+
+  textarea {
+    width: 175px;
+  }
+}
+
+.button {
+  width: 70px;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+/* table style */
+table {
+  border: 1px solid floralwhite;
+  width: 100%;
+  display: inline-block;
+  /* table-layout: fixed; */
+}
+
+td {
+  border: 2px solid floralwhite;
+  text-align: left;
+  padding: 0.5% 1%;
+}
+
+.td-center {
+  text-align: center;
+}
+
+.col-link-size {
+  /* was 25% */
+  width: 20%;
+}
+
+.col-desc-size {
+  /* was 70% */
+  width: 80%;
+}
+
+@media (max-width: 800px) {
+  .col-link-size {
+    min-width: 100px;
+  }
+}
+
+/* Posts style */
+.post-img {
+    max-width: 100%;
+    max-height: 70vh;
+    width: auto;
+    height: auto;
+    margin: 20px auto;
+}
+
+.post-previous {
+  width: 50%;
+  float: left;
+  display: inline;
+}
+
+.post-next {
+  width: 50%;
+  float: right;
+  display: inline;
+  text-align: right;
+}

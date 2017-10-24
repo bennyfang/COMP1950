@@ -1,0 +1,202 @@
+/* specify font family and color for all text element */
+h1 {
+  font-weight: bolder;
+  font-family: Verdana, Geneva, sans-serif;
+  color: #52FFB8;
+}
+
+h2, h3, h1 a {
+  font-weight: bolder;
+  font-family: Verdana, Geneva, sans-serif;
+  color: floralwhite;
+}
+
+p, li, i, label, td {
+  font-family: 'Merriweather', Georgia, Times;
+  color: floralwhite;
+}
+
+a {
+  font-family: 'Merriweather', Georgia, Times;
+  text-decoration: none;
+  color: #C0F8D1; /* light green */
+}
+
+a span {
+  color: orange;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* title and paragraph style and font size */
+h1 {
+  font-size: 25px;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 20px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+p, li {
+  font-size: 15px;
+  line-height: 200%;
+}
+
+ul {
+  margin: 0;
+}
+ul.dashed {
+  list-style: none;
+}
+ul.dashed li {
+  text-indent: -5px;
+}
+ul.dashed li:before {
+  content: "-  ";
+}
+
+/* body and container */
+body, html {
+  background-color: #222; /* raisin black */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+}
+
+.main-body-wrapper {
+  margin: 65% 5% 71px 5%;
+  display: inline-block;
+  height: 100%;
+}
+
+/* cover style */
+.cover-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.cover-img {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.cover-title {
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.cover-title h1 {
+  margin: 0 auto;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 4vw;
+}
+
+/* side nav style */
+.main-side-nav-wrapper {
+  max-width: 130px;
+  display: block;
+  float: right;
+  position: relative;
+}
+
+.main-side-nav-wrapper-fixed {
+  position: fixed;
+  right: 5%;
+  top: 40%;
+  display: block;
+}
+
+nav a {
+  width: 100%;
+  min-width: 20px;
+  font-size: 13px;
+  float: left;
+  font-weight: bold;
+  border-top: 1px solid grey;
+  padding: 6px 0;
+}
+
+nav a:hover {
+  color: #BDCFB5; /* roman silver */
+  text-decoration: none;
+}
+
+nav a span:hover {
+  color: #BC412B; /* pale orange */
+  text-decoration: none;
+}
+
+/* main section wrapper */
+.main-section-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 80%;
+  float: left;
+}
+
+/* media query for about page */
+@media (max-width: 725px) {
+  .main-section-wrapper {
+    max-width: 55%;
+  }
+}
+
+/* footer style */
+.footer-wrapper {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  min-height: 40px;
+	border-top: 1px solid floralwhite;
+  margin: 0 5%;
+  padding-top: 10px;
+}
+
+.footer-text-wrapper {
+  position: relative;
+  float: left;
+}
+
+.footer-icons {
+  position: relative;
+  float: right;
+}
+
+.footer-wrapper i {
+  margin-left: 10px;
+}
+
+.footer-wrapper i:hover {
+  color: #C0F8D1; /* light green */
+}
+
+.footer-wrapper p {
+  font-size: 12px;
+  display: block;
+  margin: 0;
+  line-height: 150%;
+}
