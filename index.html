@@ -1,44 +1,81 @@
 <!doctype html>
 
 <html>
-	<!--Built on 09/18/2017 Benny Fang, A01034306-->
+	<!--Built on 10/30/2017 Benny Fang, A01034306-->
 	<head>
-		<title>Benny | COMP1850 Assignment #1</title>
+		<title>Benny | COMP1950 Homepage</title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 	</head>
 	<body>
 		<!--
-			Include a navigation menu of links to each of the other three pages. All three pages should be interlinked. The navigation should have the same style and position on all pages. Include on index.html your full name. Using the textbook or online resources, learn about two new HTML tags that are not covered in COMP 1850 curriculum (do not choose any form related elements such as the input tag). Deploy the new tags on this page and include text that explains what you chose, and what semantic value, if any, the tags possess. Also explain and demonstrate the use of some of these tags’ attributes and/or CSS properties.
+		Create a homepage to serve as the hub for all your work in COMP1950. As subsequent
+		homework assignments are issued, you will add links to them on this page. Your
+		homepage should state your full name, or nickname if you prefer. Include some
+		biographical information about yourself (such as from your introduction today) and a
+		photo. Also include:
+			- A brief overview of your skill level, web development work you have done so
+			far (if any)
+			- A list of tools, plug-ins, applications or IDEs that you use for web development,
+			including links to the web pages of these tools.
+			- Links to some of your favorite sites, accompanied by brief descriptions
+			explaining why these sites are favorites
 		-->
-		<div class="container">
-			<img class="css_valid_img" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
-			<div class="header">
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li>|</li>
-						<li><a href="resources/index.html">Resources</a></li>
-						<li>|</li>
-						<li><a href="tutorial/index.html">Tutorial</a></li>
-						<li>|</li>
-						<li><a href="asnmt/2/project_proposal.html">Assignment2</a></li>
-						<li>|</li>
-						<li><a href="final_project/index.html"><span>Final Project</span></a></li>
-					</ul>
-				</nav>
-			</div>
-			<h1>Welcome to Benny's COMP1850 learning cite!</h1>
-			<p>Today I will cover two new tags that we have not covered in class as shown below:</p>
-			<p>The <button>Button</button> tag: The <strong>&lt;button&gt;</strong> tag defines a clickable button. Inside a <strong>&lt;button&gt;</strong> element you can put content, like text or images. Button attributes could specify things such as font size, button size, color and action taken after button click (new link, javascript action, etc.). The example below showcase change in size, text color, background color as well as a JavaScript action that we will learn later in the course!</p>
-			<p>Example: <button id="example-button" onclick="alert('Hello Web!')">Example button</button></p>
-			<p>The nav tag: The <strong>&lt;nav&gt;</strong> tag (introduced in HTML5) defines a set of navigation links. It is intended only for major block of navigation links. Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content. Styling, besides customizing color, font, etc., could also specify how you would like to list the link to diplay when you have, for example, &lt;ul&gt; and &lt;li&gt; tags inside it.</p>
-			<p>See example at top of the page for a navigation pane! </p>
-			<p>My homework could also be found below:</p>
-			<p><a href="hw/hw1+2/index.html" target="_blank">HW1+2</a></p>
-			<p><a href="hw/hw3/index.html">HW3</a></p>
-			<p><a href="hw/hw4/index.html">HW4</a></p>
-			<p><a href="hw/hw5/index.html">HW5</a></p>
+		<div id="#top" class="body_wrapper">
+			<nav class="header">
+        <a href="index.html">Home</a>
+				<a href="" class="not-active">HW2 </a>
+				<a href="" class="not-active">HW3 </a>
+				<a href="" class="not-active">HW4 </a>
+				<a href="" class="not-active">HW5 </a>
+				<a href="" class="not-active">HW6 </a>
+				<a href="" class="not-active">HW7 </a>
+				<a href="COMP1850/index.html">Old COMP1850 Works</a>
+			</nav>
+			<h1>Welcome to Benny's COMP1950 homepage!</h1>
+      <h2>Introduction</h2>
+				<div class="img-cropper">
+					<img alt="My Profile Picture" src="assets/profile.jpg">
+				</div>
+				<p>Howdy! My name is Benny, a developer and a graduate from University of Toronto. My major was computer engineering, and I have worked with mainly object-oriented languages during my university studies such as C++ and Java. I also learned fundamentals on database and network security, but hadn't had a chance to actually work with web development. So that's why I'm here now, learning web development to enrich my knowledge!</p>
+				<p>Fun fact: my favourite course during my university was actually Japanese!</p>
+				<p>Checkout my experiences and projects below!</p>
+	    	<h3>My Software Experiences:</h3>
+	    	<ul>
+					<li>Web Configuration and Development (html, ASP, CSS, JavaScript, PHP)</li>
+					<li class="innerbullet">Framework/format: JQuery, Bootstrap, AngularJS</li>
+					<li>ASP.NET (VB, C#)</li>
+					<li>Object-Oriented Languages (C, C++, Java)</li>
+					<li>SQL Database (MySQL, T-SQL, PostgreSQL, Java ODBC)</li>
+					<li>Scripting (Linux Shell Script, VB Script)</li>
+					<li>Workforce Formula Language (in-house language similar to JavaScript)</li>
+					<li>Swift (iOS App Dev) - introductory</li>
+        </ul>
+				<h3>My Web Dev Projects</h3>
+				<ul>
+					<li><a href="http://bennyfang.github.io/" target="_blank">My own website</a> - my personal resume website powered by Jekyll and uploaded on GitHub page. It's still rough and will be improved in the future to fully support responsive designs.</li>
+					<li>Personal project on merchandise-posting (In-progress) - a site on Angular 2 platform, using Node.js as backend and Mongodb as database (MEAN stack)</li>
+					<li><a href="COMP1850/final_project/index.html" target="_blank">My COMP1850 Final Project</a> - a mock-up design using mostly basic css and html for my food blog (tentative) if I ever become a food blogger. I'm a bit of a foodie so writing about food I like was perfect for my project.</li>
+
+        </ul><br />
+      <h2>Useful Tools</h2>
+			<ul>
+				<li><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> - a popular html, css and js open source library that support responsive design and useful prebuilt components.</li>
+				<li><a href="https://jquery.com/" target="_blank">JQuery</a> - a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.</li>
+				<li><a href="https://angularjs.org/" target="_blank">AngularJS</a> - a Java Script-based open source front end web application framework mainly maintained by Google. It supports dynamic views in web-applications and lets you extend HTML vocabulary for your application.</li>
+				<li><a href="https://reactjs.org/" target="_blank">ReactJS</a> - a JavaScript library for building interactive user interfaces. It allows developers to create large web-applications that use data and can change over time without reloading the page and aims primarily to provide speed, simplicity, and scalability.</li>
+				<li><a href="https://www.asp.net/mvc" target="_blank">ASP.NET MVC</a> - a web application framework developed by Microsoft, which implements the model–view–controller (MVC) pattern. It is a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup for enjoyable, agile development. ASP.NET MVC includes many features that enable fast, TDD-friendly development for creating sophisticated applications that use the latest web standards.</li>
+      </ul><br />
+      <h2>Favourite Sites</h2>
+      <ul>
+        <li><a href="https://www.reddit.com" target="_blank">Reddit</a> - This is the biggest forum site in North America I browse that has content for almost anything you might be interested in. (e.g: news, politics, games, even cute things!) The main objective of the site is to have users to have discussions with each other about the topics that they like, as well as people who simply want to read about interesting contents other people write. This is one of my favourite site because it is very content rich as I could browse what people say about various topics or interesting posts that people have shared and frequently liked.</li>
+        <li><a href="https://www.youtube.com/user/cookingwithdog" target="_blank">CookingWithDog Youtube Channel</a> - A youtube channel that focuses on producing recipe videos for home-cook style Japanese comfort food. In my opinion a very educational and interesting channel to learn new cooking skills as well as acquiring various tips and tricks to make Japanese food which I love.</li>
+				<li><a href="https://mail.google.com/" target="_blank">GMail</a> - very essential for my everyday work to receive emails and updates regarding my subscriptions. I love it because I have been with GMail for years with its free to use mailbox and it is also linked to my other frequently used app such as Google Drive.</li>
+      </ul>
+			<nav class="footer">
+				<a href="#top">Back to Top</a>
+				<a href="http://validator.w3.org/check?uri=referer">Referer Link</a>
+			</nav>
 		</div>
 	</body>
 </html>
