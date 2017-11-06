@@ -1,11 +1,14 @@
 <!doctype html>
 
-<html>
+<html lang="en">
 	<!--Built on 10/30/2017 Benny Fang, A01034306-->
 	<head>
 		<title>Benny | COMP1950 Homepage</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/style-v2.css" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 	</head>
 	<body>
 		<!--
@@ -22,20 +25,24 @@
 			explaining why these sites are favorites
 		-->
 		<div id="#top" class="body_wrapper">
-			<nav class="header">
-        <a href="index.html">Home</a>
-				<a href="" class="not-active">HW2 </a>
-				<a href="" class="not-active">HW3 </a>
-				<a href="" class="not-active">HW4 </a>
-				<a href="" class="not-active">HW5 </a>
-				<a href="" class="not-active">HW6 </a>
-				<a href="" class="not-active">HW7 </a>
-				<a href="COMP1850/index.html">Old COMP1850 Works</a>
-			</nav>
+			<header>
+				<nav class="header-nav">
+					<ul class="nav-link-list">
+		        <li><a href="index.html">Home</a></li>
+						<li><a href="hw/2/index.html">HW2 </a></li>
+						<li><a href="" class="not-active">HW3 </a></li>
+						<li><a href="" class="not-active">HW4 </a></li>
+						<li><a href="" class="not-active">HW5 </a></li>
+						<li><a href="" class="not-active">HW6 </a></li>
+						<li><a href="" class="not-active">HW7 </a></li>
+						<li><a href="COMP1850/index.html">Old COMP1850 Works</a></li>
+					</ul>
+				</nav>
+			</header>
 			<h1>Welcome to Benny's COMP1950 homepage!</h1>
       <h2>Introduction</h2>
 				<div class="img-cropper">
-					<img alt="My Profile Picture" src="assets/profile.jpg">
+					<img alt="My Profile Picture" src="assets/profile.jpg"></img>
 				</div>
 				<p>Howdy! My name is Benny, a developer and a graduate from University of Toronto. My major was computer engineering, and I have worked with mainly object-oriented languages during my university studies such as C++ and Java. I also learned fundamentals on database and network security, but hadn't had a chance to actually work with web development. So that's why I'm here now, learning web development to enrich my knowledge!</p>
 				<p>Fun fact: my favourite course during my university was actually Japanese!</p>
@@ -56,7 +63,6 @@
 					<li><a href="http://bennyfang.github.io/" target="_blank">My own website</a> - my personal resume website powered by Jekyll and uploaded on GitHub page. It's still rough and will be improved in the future to fully support responsive designs.</li>
 					<li>Personal project on merchandise-posting (In-progress) - a site on Angular 2 platform, using Node.js as backend and Mongodb as database (MEAN stack)</li>
 					<li><a href="COMP1850/final_project/index.html" target="_blank">My COMP1850 Final Project</a> - a mock-up design using mostly basic css and html for my food blog (tentative) if I ever become a food blogger. I'm a bit of a foodie so writing about food I like was perfect for my project.</li>
-
         </ul><br />
       <h2>Useful Tools</h2>
 			<ul>
@@ -71,11 +77,15 @@
         <li><a href="https://www.reddit.com" target="_blank">Reddit</a> - This is the biggest forum site in North America I browse that has content for almost anything you might be interested in. (e.g: news, politics, games, even cute things!) The main objective of the site is to have users to have discussions with each other about the topics that they like, as well as people who simply want to read about interesting contents other people write. This is one of my favourite site because it is very content rich as I could browse what people say about various topics or interesting posts that people have shared and frequently liked.</li>
         <li><a href="https://www.youtube.com/user/cookingwithdog" target="_blank">CookingWithDog Youtube Channel</a> - A youtube channel that focuses on producing recipe videos for home-cook style Japanese comfort food. In my opinion a very educational and interesting channel to learn new cooking skills as well as acquiring various tips and tricks to make Japanese food which I love.</li>
 				<li><a href="https://mail.google.com/" target="_blank">GMail</a> - very essential for my everyday work to receive emails and updates regarding my subscriptions. I love it because I have been with GMail for years with its free to use mailbox and it is also linked to my other frequently used app such as Google Drive.</li>
-      </ul>
-			<nav class="footer">
-				<a href="#top">Back to Top</a>
-				<a href="http://validator.w3.org/check?uri=referer">Referer Link</a>
-			</nav>
+      </ul><br />
+			<footer>
+				<nav class="footer-nav">
+					<ul class="nav-link-list">
+						<li><a href="#top">Back to Top</a></li>
+						<li><a href="http://validator.w3.org/check?uri=referer">Referer Link</a></li>
+					</ul>
+				</nav>
+			</footer>
 		</div>
 	</body>
 </html>
