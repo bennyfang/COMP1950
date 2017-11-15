@@ -1,0 +1,160 @@
+/* import normalize css */
+@import url("../../../normalize.css");
+/* Created on 2017-11-04 by Benny Fang, A01034306 */
+/*
+Demonstrate the following CSS techniques in your stylesheet:
+- id, class and HTML selectors (no id and class in given html!) x
+- Descendant selectors x
+- Child Selectors x
+- Attribute selectors x
+- Pseudoclasses x
+*/
+
+/* import utf-8 charset */
+@charset "utf-8";
+
+/* font-related style */
+h1, h2, h3, a, p, li, figcaption {
+	color: floralwhite;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+h1, h2 {
+	line-height: 100%;
+}
+
+h1 {
+	margin: 2.5% 0;
+	font-size: 35px;
+	font-weight: bolder;
+}
+
+header > h1:after {
+	content: ' :<)'
+}
+
+h2 {
+	font-size: 30px;
+	margin: 0 0 15px 0;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 25px;
+	font-style: italic;
+}
+
+ol > li {
+	font-size: 20px;
+	font-style: bold;
+}
+
+/* container and body style */
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #291F1E; /* raisin black */
+	font: 15px;
+}
+
+header {
+	color: floralwhite;
+  background-color: #443E3E; /* dark grey */
+	padding: 5px 10px;
+	text-transform: uppercase;
+}
+
+main {
+	margin: 2.5% 5% 0 5%;
+}
+
+details, summary, details > p {
+	margin-left: 2.5%;
+}
+
+footer {
+  background-color: #443E3E; /* dark grey */
+	padding: 10px 20px;
+	font-size: 12px;
+}
+
+hr {
+	margin: 2.5% 0;
+}
+
+/* navigation and link style */
+a:hover {
+	color: #A5D8FF; /* fresh air */
+}
+
+nav ul {
+	margin: 2.5% 5%;
+	padding: 0;
+}
+
+nav li {
+	list-style: none;
+}
+
+nav a {
+  border-radius: 5px;
+  background-color: #4CAF50; /* Green */
+  color: floralwhite;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 100px;
+  cursor: pointer;
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: #F64740; /* coral red */
+	color: floralwhite;
+}
+
+/* figure and img style */
+img {
+	max-width: 650px;
+	height: auto;
+}
+/* style oversized img - light media query */
+@media (max-width: 650px) {
+	img[src="london.jpg"] {
+		width: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+	img[src="newyork.jpg"] {
+		width: 100%;
+	}
+}
+
+figure {
+	margin: 2.5% 0;
+}
+
+figure > figcaption {
+	font-size: 10px;
+}
+
+figure > figcaption:before {
+	content: "Figure above: "
+}
+/* give hover effect to img that use bcit logo as source */
+img[src="bcit.png"]:hover {
+	box-shadow: 5px 5px 10px 0 floralwhite;
+}
+
+/* summary style */
+details, details > p {
+	color: #A5D8FF; /* fresh air */
+	font-size: 10px;
+}
+
+summary:after {
+	content: ' ©BCIT';
+}

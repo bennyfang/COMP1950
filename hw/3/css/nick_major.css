@@ -1,0 +1,41 @@
+body{
+	width:400px;
+	background-color:#f7f6f4;
+	font-family:arial;
+	font-size:.85em;
+	padding:10px;
+}
+
+h1, h2, h3 {
+			color: gray;
+			background-color: #f0f0f0;
+			font-family: Helvetica, arial;
+			font-size: 4em;
+}
+p:first-letter{
+	font-size:2em;
+}
+
+h2 p:first-line{
+	font-style:italic;
+
+}
+
+h2 > ul:nth-child(2n){
+	background-color:#c5d8f7
+}
+
+a:link    {
+  text-decoration:none;
+  font-weight:bold;
+  color:blue;
+}
+
+a[href$=".com/"]{
+	background-color:white;
+	font-weight:bold;
+}
+
+ul ul{
+	color:white;
+}

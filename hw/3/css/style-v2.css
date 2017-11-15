@@ -1,6 +1,6 @@
 /* import normalize css and common css used across multiple pages */
-@import url("normalize.css");
-@import url("common.css");
+@import url("../../../css/normalize.css");
+@import url("../../../css/common.css");
 
 /* img style */
 .img-cropper {
