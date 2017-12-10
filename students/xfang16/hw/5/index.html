@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="en">
+	<!--Built on 11/10/2017 Benny Fang, A01034306-->
+	<head>
+		<title>Benny | Homework 5</title>
+		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/style.css" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--
+		Responsive requirements
+		Create at least 3 distinct layouts/styles for the following scenarios
+		- Client has a widescreen x
+		- Client has a small device x
+		- Client is sending the page to a printer
+		Apply whatever responsive breakpoints you feel are best for your layout. For small
+		devices use responsive design best practices, including vertical stacked navigation and
+		priority ordering of content. It is up to you if you want to assign fixed font and image
+		sizes or use fluid fonts and images. For printing, use appropriate fonts, hide printoutuseless
+		content and display the href of all fully qualified links
+
+		Content requirements
+
+		Write a review to promote your favorite book, television show, movie, game or
+		pastime. Explain the reasons you enjoy it, and why someone else might enjoy it too.
+		Provide tips or suggestions for those who might not know much about the subject.
+		Make an effort to persuade the user by using relevant images, descriptions, links to
+		related resources etc.
+		-->
+		<header>
+			<div class="header-banner">
+				<a class="header-background" href="http://bcitcomp.ca/comp1950/" target="_blank"></a>
+			</div>
+			<a href="http://bcitcomp.ca/comp1950/" target="_blank" class="header-text">Navigate to COMP1950</a>
+		</header>
+
+		<nav id="main-nav">
+			<ul	class="nav-link-list">
+				<li><a href="../../index.html">Back to Home</a></li>
+				<li id="active"><a id="current" href="index.html">My Favourite Game</a></li>
+				<li><a href="css3.html">CSS3</a></li>
+			</ul>
+		</nav>
+		<div id="main-container">
+			<h1>My Favourite Game - League of Legends</h1>
+			<section>
+				<h2>Introduction</h2>
+				<div class="img-left-wrapper">
+					<div class="img-cropper">
+						<img src='assets/lol.jpg' alt="League of Legends"></img>
+					</div>
+				</div>
+				<div class="text-wrapper">
+					<blockquote>"League of Legends is the world’s most popular MOBA, boasting 67 million players monthly and up to 30 million players each and every day across its global servers it is disputably the most popular game in existence. In this MOBA, you play as one of [138] characters (referred to as Champions) in teams of five fighting others in a race down their lanes to destroy the enemy base first. Ideally, teams will send one player to the top lane, one to the middle lane, two into the bottom lane and the fifth one will take the jungle that separates these lanes. Every lane will fight individually while receiving aid from their jungler until it becomes time for 5 on 5 team fights!  Since the game stems from the ideals of World of Warcraft and other online games before it, there are diverse sets of roles and characters who fulfill them. What’s your play style? Are you a support, acting as a medic for the easy-to-kill champions? Or maybe “No guts, no glory” is your anthem and prefer to get right up in the face of your enemies with a Tank or Bruiser!  However you play your games, League of Legends has something to suit you." - Twinfinite Staff</blockquote>
+				</div>
+			</section>
+			<div class="print-page-break"></div>
+			<section>
+				<h2>My Reviews - Why I recommend this game</h2>
+				<div class="img-right-wrapper">
+					<div class="img-cropper">
+						<img src='assets/lol-mage.jpg' alt="League of Legends"></img>
+					</div>
+				</div>
+				<div class="text-wrapper">
+					<p>I have played this game many years since high school and the best thing about this game is that the game never gets old! Content updates are constantly implemented and old champions are revisited if necessary to adjust how strong they are relative to other champions as well as adding new skills to the champion (so a old dog can learn many new tricks!). When you start a game, it also feels new because you start as a level 1 character every game and play with different players from the last one. You can feel the progression of the game as your character becomes stronger and eventually obtain an ultimate skill (at level 6) that you can unleash upon your enemy. My favourite type of champion to play is mage, which relies on spells or skills to deal tons of damage to opponent and erase them from the game! It is really fun and I really recommend anyone new to the game to try variety of styles and figure out which champion is the one for you.</p>
+				</div>
+			</section>
+			<section>
+				<h2>Sources and Useful Links</h2>
+				<ul>
+					<li><a href="http://twinfinite.net/2014/11/5-playing-league-of-legends/" target="_blank">5 Reasons Why You Should Start Playing League of Legends</a></li>
+					<li><a href="https://play.na.leagueoflegends.com/en_US" target="_blank">League of Legends official website</a></li>
+					<li><a href="https://slingshotesports.com/2017/09/19/your-shop-league-legends-disabled/" target="_blank">League of Legends cover 2017</a></li>
+					<li><a href="https://qwertyis666.deviantart.com/art/LoL-Mage-1-463965311" target="_blank">League of Legends mage art source</a></li>
+				</ul>
+			</section>
+		</div>
+		<footer>
+			<?php
+				$documentRoot = $_SERVER["DOCUMENT_ROOT"];
+				include ("$documentRoot/students/xfang16/include/commonv2-footer.html");
+			?>
+		</footer>
+	</body>
+</html>

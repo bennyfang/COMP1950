@@ -1,0 +1,23 @@
+/* import normalize css */
+@import url("../../../css/normalize.css");
+
+/* import hw 4/5 theme */
+@import url("../../../css/common-v2.css");
+
+.nav-link-list li {
+  width: 150px;
+}
+
+@media screen and (max-width: 599px) and (min-width: 355px) {
+  .nav-link-list li {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 354px) {
+  .nav-link-list {
+    flex-direction: column;
+  }
+  .nav-link-list li {
+    width: 100%;
+  }
+}

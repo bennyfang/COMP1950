@@ -1,0 +1,451 @@
+/* import normalize css */
+@import url("normalize.css");
+
+/* specify font-family for all fonts */
+h1, h2, h3, p, li, a, blockquote{
+  font-family: Verdana, Geneva, sans-serif;
+  color: #54426B; /* cyber grape */
+}
+/* font style */
+h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 0px;
+  min-width: 100%;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p, li, blockquote, section > a {
+  font-size: 15px;
+  line-height: 150%;
+  margin: 10px 0 0 0;
+}
+
+blockquote {
+  font-style: italic;
+}
+/* link style */
+a {
+  -moz-transition: color 0.4s ease;
+  -ms-transition: color 0.4s ease;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+section > a:hover, p a:hover, li a:hover {
+  color: #4CAF50; /* green */
+}
+
+/* body and container style */
+html {
+  height:100%;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  min-height: 90%;
+  background-color: #EAE0CC; /* pearl */
+  padding-bottom: 80px; /* same as footer height */
+  overflow-x: hidden;
+}
+
+#main-container {
+  margin: 2.5% 10%;
+  overflow: hidden;
+}
+
+section {
+  margin-top: 30px;
+}
+
+.text-wrapper {
+  display: inline;
+}
+
+/* img style: left and right */
+.img-left-wrapper {
+  width: 300px;
+  margin: 0 4% 2.5% 0;
+  padding: 0;
+  position: relative;
+  float: left;
+}
+
+.img-right-wrapper {
+  width: 300px;
+  margin: 0 0 2.5% 4%;
+  padding: 0;
+  position: relative;
+  float: right;
+}
+
+.img-cropper {
+  height: auto;
+  overflow: hidden;
+  border-radius: 10%;
+  margin: 0;
+  box-shadow: 0 4px 8px 0 #54426B;
+}
+
+.img-cropper img {
+  width: 100%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+/* responsive design */
+@media screen and (max-width: 599px) {
+  header .header-text {
+    font-size: calc(20px - 10%);
+  }
+
+  header:hover .header-text {
+    left: 40% !important;
+  }
+
+  h1 {
+    font-size: calc(30px - 20%);
+  }
+
+  h2 {
+    font-size: calc(25px - 20%);
+  }
+  .content-right-wrapper {
+    display: inline-block;
+  }
+  .img-left-wrapper, .img-right-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 381px) {
+  header .header-text {
+    display: none;
+  }
+}
+
+/* header style */
+
+.header-background {
+  display: block;
+  height: 92px;
+  background-image: url(../assets/comp1950.png);
+  text-decoration: none;
+  text-align: center;
+  -moz-transition: opacity 0.4s ease;
+  -ms-transition: opacity 0.4s ease;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.header-text {
+  position: absolute;
+  top: 1vw;
+  left: 100%;
+  white-space: nowrap;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: inline;
+  font-size: calc(2vw + 5px);
+  text-decoration: none;
+  color: red;
+}
+
+.header-text:after {
+  content: '\00bb';
+  position: absolute;
+  right: -12px;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+header:hover .header-background {
+  opacity: 0.3;
+}
+
+header:hover .header-text {
+  padding-right: 18px;
+  left: 60%;
+  color: red;
+}
+
+header:hover .header-text:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* nav style - modified from example: https://www.w3schools.com/css/css_navbar.asp */
+/* alter to color, border, flex display */
+.nav-link-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #E28413; /* orange */
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.nav-link-list li {
+  float: left;
+  width: 200px;
+  border-right: 1px black solid;
+  border-bottom:  1px black solid;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.nav-link-list li a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #54426B; /* cyber grape */
+  -moz-transition: background 0.4s ease;
+  -ms-transition: background 0.4s ease;
+  -webkit-transition: background 0.4s ease;
+  transition: background 0.4s ease;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav-link-list li a:hover {
+  background-color: #C9ADA1; /* silver pink */
+}
+
+#current {
+  background-color: #DB5461; /* DARK TERRA COTTA */
+}
+
+/* responsive header bar without javascript */
+@media screen and (max-width: 599px) and (min-width: 355px) {
+  .nav-link-list li {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 354px) {
+  .nav-link-list {
+    flex-direction: column;
+  }
+  .nav-link-list li {
+    width: 100%;
+  }
+}
+
+/* footer style */
+footer {
+  margin: 0;
+  max-height: 60px;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #443E3E; /* dark grey */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#footer-text-wrapper {
+  position: relative;
+  float: left;
+  display: block;
+  margin: 20px 5% 0 5%;
+}
+
+#footer-text-wrapper p {
+  font-size: 12px;
+  color: #EAE0CC; /* pearl */
+  margin: 0;
+}
+
+#footer-icons {
+  display: block;
+  float: right;
+  margin: 10px 20px 10px 0;
+}
+
+.bg-facebook {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: url('../assets/social-sprite.png') -10px -10px;
+  -moz-transition: opacity 0.4s ease;
+  -ms-transition: opacity 0.4s ease;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.bg-twitter {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: url('../assets/social-sprite.png') -66px -10px;
+  -moz-transition: opacity 0.4s ease;
+  -ms-transition: opacity 0.4s ease;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.bg-instagram {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: url('../assets/social-sprite.png') -122px -10px;
+  -moz-transition: opacity 0.4s ease;
+  -ms-transition: opacity 0.4s ease;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+/* add hover opacity effect as indicator */
+.bg-facebook:hover, .bg-twitter:hover, .bg-instagram:hover {
+  opacity: 0.5;
+}
+
+/* for extra small screen - collapse column on footer */
+@media screen and (max-width: 424px) {
+  footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    max-height: 105px;
+  }
+  body {
+    padding-bottom: 105px;
+  }
+
+  #footer-icons {
+    margin: 10px 0 10px 2.5%;
+  }
+  #footer-text-wrapper {
+    margin: 10px 2.5% 0 5%;
+  }
+}
+
+/* other css styles */
+#text-shadow {
+  text-shadow: 5px 5px 5px #54426B; /* cyber grape */
+}
+
+#stroke {
+  stroke: black;
+  fill: red;
+  stroke-width: 2;
+}
+
+#text-overflow {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+
+  overflow:hidden;
+  white-space:nowrap;
+
+  border: 1px solid black;
+  width: auto;
+
+  padding: 20px;
+
+  cursor: pointer;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.5s ease;
+}
+
+#text-overflow:active, #text-overflow:hover {
+  white-space: normal;
+  color: rgba(0,0,0,1);
+  background-color: #C9ADA1; /* silver pink */
+  border: 1px solid #666;
+}
+
+/* print media query */
+@media print {
+  /* hide none-related contents */
+  header, nav, footer {
+    display: none;
+  }
+  /* restyling layout */
+  body, header, footer {
+    /* floating is not advised for printers */
+    float: none;
+
+    /* let the printer set margins */
+    width: auto;
+    margin: 0;
+    padding: 0;
+
+    /* dont display background colors or images */
+    background: none;
+  }
+
+  /* ideal font for printing */
+  h1, h2, h3, p, li, a, blockquote{
+    font-family: Georgia, "Times New Roman", Serif;
+    color: black;
+  }
+
+  /* never have title at end of page */
+  h1, h2 {
+    page-break-after: avoid;
+  }
+  /* remove margin for lists */
+  li {
+    margin: 0;
+  }
+
+  section {
+    margin-top: 30px;
+  }
+
+  /* page break at specific div point */
+  .print-page-break {
+    page-break-after:always;
+  }
+
+  a:link, a:visited {
+  	/* if using color, make it dark! */
+  	color: #330099;
+
+  	/* make link text stand out */
+  	text-decoration: underline;
+  	font-weight: bold;
+  }
+
+  /* add URL info to external links */
+  a[href^="http"]:after{
+     content: " (URL: " attr(href) ") ";
+     font-size: 90%;
+  }
+  /* put text into new row upon printing */
+  .text-wrapper {
+    float: left;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .img-right-wrapper, .img-left-wrapper {
+    float: left;
+    margin: 0 4% 2.5% 0;
+    width: 80%;
+  }
+}

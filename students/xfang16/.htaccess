@@ -1,0 +1,18 @@
+# .htaccess
+# ------------
+# the .htaccess file customizes how the server will behave
+# comments in .htaccess begin with a number sign (like this line does)
+
+#ErrorDocument <errorNumber> <path>
+ErrorDocument 404 /students/xfang16/error.html
+
+SetEnv TZ America/Los_Angeles
+
+#Disable directory browsing
+Options All -Indexes
+
+AddDefaultCharset UTF-8
+
+#AddType and AddHandler can be instructed to parse .html files as .php
+AddType application/x-httpd-php .html
+AddHandler application/x-httpd-php .html

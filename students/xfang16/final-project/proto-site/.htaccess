@@ -1,0 +1,24 @@
+# .htaccess
+# ------------
+# the .htaccess file customizes how the server will behave
+# comments in .htaccess begin with a number sign (like this line does)
+
+#ErrorDocument <errorNumber> <path>
+ErrorDocument 404 /students/xfang16/final-project/proto-site/404.php
+
+SetEnv TZ Canada/Pacific
+
+#Disable directory browsing
+Options All -Indexes
+
+AddDefaultCharset UTF-8
+
+#if your html content is regularly updated, set a 1 day cache
+<filesMatch ".(html)$">
+	Header set Cache-Control "max-age=86400, public"
+</filesMatch>
+
+#disable cache for css
+<filesMatch ".(css)$">
+	Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+</filesMatch>

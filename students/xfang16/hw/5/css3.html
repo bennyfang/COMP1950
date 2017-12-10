@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+	<!--Built on 11/10/2017 Benny Fang, A01034306-->
+	<head>
+		<title>Benny | Homework 5 CSS3</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+		<link rel="stylesheet" href="css/style.css" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--
+			Throughout this page, demonstrate at least 3 CSS3 techniques from the
+			following list of features:
+			a. border-radius
+			b. box-shadow
+			c. text-shadow
+			d. transition
+			e. gradient
+			f. multiple backgrounds
+			- Research online for at least 2 new CSS3 techniques not covered in comp1950.
+			Either learn new ways of using some of properties already introduced in class
+			or learn about how to use properties not yet discussed.
+			- Deploy both of these new techniques on the page and explain, in brief, what
+			you are doing with them.
+			- Provide links to the online resources you used during research.
+			- Include notes about any browser compatibility issues, or vendor-prefixing
+			required.
+		-->
+		<header>
+			<div class="header-banner">
+				<a class="header-background" href="http://bcitcomp.ca/comp1950/" target="_blank"></a>
+			</div>
+			<a href="http://bcitcomp.ca/comp1950/" target="_blank" class="header-text">Navigate to COMP1950</a>
+		</header>
+		<nav id="header-nav">
+			<ul	class="nav-link-list">
+				<li><a href="../../index.html">Back to Home</a></li>
+				<li><a href="index.html">My Favourite Game</a></li>
+				<li id="active"><a id="current" href="css3.html">CSS3</a></li>
+			</ul>
+		</nav>
+		<div id="main-container">
+			<h1>CSS3 Techniques</h1>
+			<section>
+				<h2>Techniques demonstrated</h2>
+				<ol>
+					<li>Border-radius & Box-shadow - Refer to image in My Favourite Game section. It has a border radius of 10% and border-shadow on bottom and right!</li>
+					<li id="text-shadow">Text-shadow - this is text-shadowed!</li>
+					<li>Transition - Header and footer utilizes transition properties. Vendor prefixes are used here for compatibility to all browsers.</li>
+				</ol>
+			</section>
+			<section>
+				<h2>New techniques not demonstrated in class</h2>
+				<ol>
+					<li>
+						<p>Stroke - A CSS3 property that supports the new svg tags introduced in html5 that allows the browser to draw shapes such as the circle below. The stroke properties are used (stroke, fill, stroke-width) to style the circle!</p>
+						<svg height="100" width="100">
+						  <circle id="stroke" cx="50" cy="50" r="40"/>
+						</svg>
+					</li>
+
+					<li>
+						<p>Text-overflow - A CSS3 technique that allows overflowing text to be hidden in a box-model container and then represented by feedback such as ellipsis. In the example below referenced <a href="https://code.tutsplus.com/tutorials/10-css3-properties-you-need-to-be-familiar-with--net-16417">here</a>, I use text-overflow property to first hide text and then expand them upon hovering. I also added a 0.5s transition effect as well. Interesting fact- this is actually developed by Internet Exploder and is compatible with IE since IE6!!</p>
+						<a href="#text-overflow" id="text-overflow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a>
+					</li>
+				</ol>
+			</section>
+			<section>
+				<h2>Sources</h2>
+				<ul>
+					<li><a href="https://www.w3schools.com/html/html5_svg.asp" target="_blank">HTML5 SVG</a></li>
+					<li><a href="https://www.w3schools.com/graphics/svg_stroking.asp" target="_blank">CSS3 Stroke Properties</a></li>
+					<li><a href="https://code.tutsplus.com/tutorials/10-css3-properties-you-need-to-be-familiar-with--net-16417" target="_blank">10 CSS3 Properties you Need to be Familiar With</a></li>
+				</ul>
+			</section>
+		</div>
+		<footer>
+			<?php
+				$documentRoot = $_SERVER["DOCUMENT_ROOT"];
+				include ("$documentRoot/students/xfang16/include/commonv2-footer.html");
+			?>
+		</footer>
+	</body>
+</html>

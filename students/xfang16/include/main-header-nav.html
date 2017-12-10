@@ -1,0 +1,25 @@
+<nav class="header-nav">
+  <ul class="nav-link-list">
+    <li><a href="/students/xfang16/index.html">Home</a></li>
+    <li><a href="/students/xfang16/hw/2/index.html">HW2</a></li>
+    <li><a href="/students/xfang16/hw/3/index.html">HW3-Nick</a></li>
+    <li><a href="/students/xfang16/hw/nickhomepage/index.html">My HW3</a></li>
+    <li><a href="/students/xfang16/hw/4/index.html">HW4</a></li>
+    <li><a href="/students/xfang16/hw/5/index.html">HW5</a></li>
+    <li><a href="/students/xfang16/hw/6/index.html">HW6</a></li>
+    <li><a href="/students/xfang16/hw/7/index.html">HW7</a></li>
+    <li><a href="https://benny-fang.tumblr.com" target="_blank">HW8</a></li>
+    <li><a href="/students/xfang16/final-project/index.php">Final Project</a></li>
+    <li><a href="/students/xfang16/COMP1850/index.html">Old COMP1850 Works</a></li>
+  </ul>
+</nav>
+<div class="datetime-container">
+  <?php
+    //set default time zone
+    date_default_timezone_set('America/Los_Angeles');
+    //determine what time it is now as well as its format
+    $timeNow = date('F d, Y, h:iA', time());
+    //output this in p tag format
+    echo "<p>Current time(Pacific): $timeNow</p>";
+  ?>
+</div>

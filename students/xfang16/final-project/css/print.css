@@ -1,0 +1,74 @@
+/* print style */
+header, nav, footer, figcaption, img, .img-cropper, #mainMenu {
+  display: none;
+}
+
+/* restyling layout */
+body, header, footer {
+  /* floating is not advised for printers */
+  float: none;
+
+  /* let the printer set margins */
+  width: auto;
+  margin: 0;
+  padding: 0;
+
+  /* dont display background colors or images */
+  background: none;
+}
+
+/* ideal font for printing */
+h1, h2, h3, p, li, ul, a, strong, em {
+  font-family: Georgia, "Times New Roman", Serif;
+  color: black;
+}
+
+h1, h2, h3 {
+  font-size: 100%;
+}
+
+p, li, ul, a, strong, em {
+  font-size: 80%;
+}
+
+/* never have title at end of page */
+h1, h2, section {
+  page-break-after: avoid;
+}
+
+/* remove margin for lists */
+li {
+  margin: 0;
+}
+
+section {
+  margin: 0;
+}
+
+/* page break at specific div point */
+.print-page-break {
+  page-break-after:always;
+}
+
+/* reset link style */
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+/* add link style to all absolute links */
+a[href^="http"]{
+  /* if using color, make it dark! */
+	color: #330099;
+
+	/* make link text stand out */
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/* add URL info to external links */
+a[href^="http"]:after{
+   content: " (URL: " attr(href) ") ";
+   font-size: 90%;
+}

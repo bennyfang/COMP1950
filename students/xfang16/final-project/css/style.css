@@ -1,0 +1,309 @@
+@import "http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css";
+@charset "utf-8";
+
+/* Benny Fang A01034306 */
+/* specify font-family for all fonts */
+* {
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+  font-size: 20px;
+	line-height: 150%;
+}
+
+h1, h2, h3, p, li, a, ul {
+  color: #54426B; /* cyber grape */
+}
+/* font style */
+h1 {
+  font-size: 200%;
+  font-weight: bolder;
+  min-width: 100%;
+	margin: 20px 0;
+}
+
+h2 {
+  font-size: 160%;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-size: 140%;
+}
+
+section {
+	margin-bottom: 40px;
+}
+
+p {
+	display: block;
+	margin-bottom: 20px;
+}
+
+section ul {
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+section ul li {
+	list-style: circle;
+	margin-left: 25px;
+	font-weight: normal
+}
+
+/* link style */
+a {
+  -moz-transition: color 0.4s ease;
+  -ms-transition: color 0.4s ease;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
+section > a:hover, p a:hover, li a:hover {
+  color: #4CAF50; /* green */
+}
+
+/* body and container style */
+html {
+  height:100%;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  background-color: #EAE0CC; /* pearl */
+	padding-bottom: 110px; /* same as footer height */
+	overflow-x: hidden;
+}
+
+#main-container {
+  margin: 2.5% 10%;
+  overflow: hidden;
+}
+
+.text-wrapper {
+  display: inline;
+}
+
+/* img style: left and right */
+.img-left-wrapper {
+  width: 300px;
+  margin: 0 4% 2.5% 0;
+  padding: 0;
+  position: relative;
+  float: left;
+}
+
+.img-right-wrapper {
+  width: 300px;
+  margin: 0 0 2.5% 4%;
+  padding: 0;
+  position: relative;
+  float: right;
+}
+
+.img-cropper {
+  height: auto;
+  overflow: hidden;
+  border-radius: 10%;
+  margin: 0;
+  box-shadow: 0 4px 8px 0 #54426B;
+}
+
+.img-cropper img {
+  width: 100%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+/* responsive design */
+@media screen and (max-width: 599px) {
+  header .header-text {
+    font-size: calc(20px - 10%);
+  }
+
+  header:hover .header-text {
+    left: 40% !important;
+  }
+
+  h1 {
+    font-size: 180%;
+  }
+
+  h2 {
+    font-size: 140%;
+  }
+}
+
+@media screen and (max-width: 381px) {
+  header .header-text {
+    display: none;
+  }
+}
+
+/* header style */
+
+.header-background {
+  display: block;
+  height: 92px;
+  background-image: url(/students/xfang16/final-project/img/comp1950.png);
+  text-decoration: none;
+  text-align: center;
+  -moz-transition: opacity 0.4s ease;
+  -ms-transition: opacity 0.4s ease;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.header-text {
+  position: absolute;
+  top: 1vw;
+  left: 100%;
+  white-space: nowrap;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: inline;
+  font-size: calc(2vw + 5px);
+  text-decoration: none;
+  color: red;
+}
+
+.header-text:after {
+  content: '\00bb';
+  position: absolute;
+  right: -12px;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+header:hover .header-background {
+  opacity: 0.3;
+}
+
+header:hover .header-text {
+  padding-right: 18px;
+  left: 60%;
+  color: red;
+}
+
+header:hover .header-text:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* nav style - modified from example: https://www.w3schools.com/css/css_navbar.asp */
+/* alter to color, border, flex display */
+.nav-link-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #E28413; /* orange */
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.nav-link-list li {
+  float: left;
+  width: 150px;
+  border-right: 2px black solid;
+  border-bottom: 2px black solid;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.nav-link-list li a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #54426B; /* cyber grape */
+  -moz-transition: background 0.4s ease;
+  -ms-transition: background 0.4s ease;
+  -webkit-transition: background 0.4s ease;
+  transition: background 0.4s ease;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav-link-list li a:hover {
+  background-color: #C9ADA1; /* silver pink */
+}
+
+#current {
+  background-color: #DB5461; /* DARK TERRA COTTA */
+}
+
+/* responsive header bar without javascript */
+@media screen and (max-width: 749px) and (min-width: 355px) {
+  .nav-link-list li {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 354px) {
+  .nav-link-list {
+    flex-direction: column;
+  }
+  .nav-link-list li {
+    width: 100%;
+  }
+}
+
+/* footer style */
+#footer {
+	background-color: #443E3E; /* dark grey */
+	box-shadow: 0 -4px 2px -2px rgba(0,0,0,.2);
+	border-top: 2px solid #009688;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	min-height: 102px;
+}
+
+#footer .content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px;
+	max-width: 1500px;
+}
+
+#footer .content * {
+	margin: 0;
+	font-size: 90%;
+	text-align: center;
+	font-weight: 400;
+	color: #EAE0CC; /* pearl */
+}
+
+#footer .content a {
+	text-decoration: underline;
+}
+
+#footer .content a:hover {
+	color: #009688;
+}
+
+#footer .content small {
+	display: block;
+}
+
+#footer h5 {
+	margin: 0;
+}
+
+#footer .content > div {
+	flex: 1;
+	text-align: center;
+}
+
+.muted {
+	opacity: .5;
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="en">
+	<!--Built on 11/10/2017 Benny Fang, A01034306-->
+	<head>
+		<title>Benny | Homework 6</title>
+		<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/style.css" />
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--
+		Write an XHTML1.0 or HTML5 page. Add a link to this page on your homepage.
+		Search online for a jQuery plugin that you find useful, and that we did not cover in
+		class. Learn how to use it, and deploy it in this page. Demonstrate attempts to alter the
+		style or behavior of the plugin to suit your design (change the color, sizes, speed of
+		animation, etc) Include the following:
+		- Use the plugin (eg if you chose a navigation plugin, demonstrate it by
+		displaying the navigation in your page) x
+		- A text description of the plugin (in your own words) x
+		- A list of any style/behavior you have customized x
+		- A link to the site you downloaded the plugin from x
+		- A link(s) to the page(s) that taught you how to use it x
+		-->
+		<header>
+			<div class="header-banner">
+				<a class="header-background" href="http://bcitcomp.ca/comp1950/" target="_blank"></a>
+			</div>
+			<a href="http://bcitcomp.ca/comp1950/" target="_blank" class="header-text">Navigate to COMP1950</a>
+		</header>
+
+		<nav id="main-nav">
+			<ul	class="nav-link-list">
+				<li><a href="../../index.html">Back to Home</a></li>
+				<li id="active"><a id="current" href="index.html">HW6</a></li>
+			</ul>
+		</nav>
+		<div id="main-container">
+			<h1>Homework 6</h1>
+			<section>
+				<h2>Swipe.js</h2>
+				<p>Swipe.js is a lightweight JavaScript app (JQuery/Angular.js compatible) that allows you to create a slideshow of elements that can be triggered by both clicking and swiping. Below is a example of the usage of slideshow. The original demo link can be found <a href="http://lyfeyaj.github.io/swipe/" target="_blank">here</a>!</p>
+				<p>In the demo the I customized below, the biggest change I added is to change the color of the slide show by button color. The default color is orange but it changes corresponding to the color of the button clicked based on JavaScript manipulation. I also added enable and disable button to enable/disable swipe on slideshow as well as button click to navigate slideshow (you can still change colors)! Refer to this <a href="js/swipe-master/README.md" target="_blank">readme</a> document for more information and usage!</p>
+			</section>
+			<section>
+				<h2>Demo</h2>
+				<div id="mySwipe" class="swipe">
+					<div class="swipe-wrap">
+						<div><b>0</b></div>
+						<div><b>1</b></div>
+						<div><b>2</b></div>
+						<div><b>3</b></div>
+						<div><b>4</b></div>
+						<div><b>5</b></div>
+						<div><b>6</b></div>
+						<div><b>7</b></div>
+						<div><b>8</b></div>
+						<div><b>9</b></div>
+						<div><b>10</b></div>
+					</div>
+				</div>
+				<div class="demo-controls">
+					<a class="btn btn-primary" id="enable">Enable</a>
+					<a class="btn btn-primary" id="prev">Prev</a>
+					<a class="btn btn-primary" id="next">Next</a>
+					<a class="btn btn-primary" id="disable">Disable</a>
+				</div>
+		</div>
+		<footer>
+			<?php
+				$documentRoot = $_SERVER["DOCUMENT_ROOT"];
+				include ("$documentRoot/students/xfang16/include/commonv2-footer.html");
+			?>
+		</footer>
+
+		<!-- scripts -->
+		<!-- JQuery reference-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- slip.js -->
+		<script src="js/swipe-master/swipe.js"></script>
+		<!-- my deploy of slip.js -->
+		<script src="js/my-swipe.js"></script>
+	</body>
+</html>

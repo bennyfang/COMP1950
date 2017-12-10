@@ -1,0 +1,22 @@
+/* import normalize css */
+@import url("common.css");
+
+body, html {
+  overflow-y: hidden;
+}
+
+.error-container {
+  display: block;
+  margin-top: 200px;
+}
+
+p {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 0.67em;
+}
+
+h1 {
+  margin: 0;
+}
