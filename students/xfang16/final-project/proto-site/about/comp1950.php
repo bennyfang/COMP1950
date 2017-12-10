@@ -28,7 +28,8 @@
 
 	<section>
 		<h2>Course curriculum</h2>
-		<ul>Session 1 - Tools & standards
+		<h3>Session 1 - Tools & standards</h3>
+		<ul>
 			<li>Lorem ipsun</li>
 			<li>Lorem ipsun</li>
 			<li>Lorem ipsun</li>
@@ -36,7 +37,8 @@
 			<li>Lorem ipsun</li>
 			<li>Lorem ipsun</li>
 		</ul>
-		<ul>Session 2 - Markup languages
+		<h3>Session 2 - Markup languages</h3>
+		<ul>
 			<li>Lorem ipsun</li>
 			<li>Lorem ipsun</li>
 			<li>Lorem ipsun</li>
@@ -44,7 +46,8 @@
 			<li>Lorem ipsun</li>
 			<li>Lorem ipsun</li>
 		</ul>
-		<ul>Session 3 - CSS techniques
+		<h3>Session 3 - CSS techniques</h3>
+		<ul>
 			<li>Lorem ipsun</li>
 			<li>Lorem ipsun</li>
 			<li>Lorem ipsun</li>

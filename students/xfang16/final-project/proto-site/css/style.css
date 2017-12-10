@@ -71,10 +71,20 @@ section ul {
 	font-weight: bold;
 }
 
-section ul li {
-	list-style: circle;
+section ul > li {
+	list-style: disc;
 	margin-left: 25px;
-	font-weight: normal
+	font-weight: normal;
+}
+
+.inner-bullet {
+	margin-bottom: 0;
+}
+
+.inner-bullet li {
+	list-style: circle;
+	margin-left: 50px;
+	font-weight: normal;
 }
 
 strong {
@@ -165,9 +175,7 @@ em {
 	width: 200px;
   height: auto;
   position: relative;
-  display: block;
 }
-
 
 #header {
 	background-color: #EAE0CC; /* pearl */
