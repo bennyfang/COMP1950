@@ -11,8 +11,8 @@
 			<figcaption>Upcoming Lecture</figcaption>
 		</figure>
 		<figure>
-			<a href="#"><img alt="Grade" src="/students/xfang16/final-project/proto-site/img/grade.png"></img></a>
-			<figcaption>My Grade</figcaption>
+			<a href="https://my.bcit.ca/" target="_blank"><img alt="Grade" src="/students/xfang16/final-project/proto-site/img/grade.png"></img></a>
+			<figcaption>My Grade (My BCIT)</figcaption>
 		</figure>
 	</div>
 </section>
